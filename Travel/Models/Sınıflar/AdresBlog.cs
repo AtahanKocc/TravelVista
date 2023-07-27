@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 
 namespace Travel.Models.Sınıflar {
-    public class Adres {
+    public class AdresBlog {
         [Key]
         public int ID { get; set; }
         public string Baslik { get; set; }
