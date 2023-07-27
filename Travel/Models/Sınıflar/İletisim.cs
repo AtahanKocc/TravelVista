@@ -5,12 +5,12 @@ using System.Linq;
 using System.Web;
 
 namespace Travel.Models.Sınıflar {
-    public class Blog {
+    public class İletisim {
         [Key]
         public int ID { get; set; }
-        public string Baslik { get; set; }
-        public DateTime Tarih { get; set; }
-        public string Aciklama { get; set; }
-        public string BlogImage { get; set; }
+        public string AdSoyad { get; set; }
+        public string Mail { get; set; }
+        public string Konu { get; set; }
+        public string Mesaj { get; set; }
     }
 }
