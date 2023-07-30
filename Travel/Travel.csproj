@@ -133,7 +133,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Sınıflar\Admin.cs" />
-    <Compile Include="Models\Sınıflar\Adres.cs" />
+    <Compile Include="Models\Sınıflar\AdresBlog.cs" />
     <Compile Include="Models\Sınıflar\Anasayfa.cs" />
     <Compile Include="Models\Sınıflar\Blog.cs" />
     <Compile Include="Models\Sınıflar\Context.cs" />
