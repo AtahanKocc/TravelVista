@@ -168,6 +168,8 @@
     <Content Include="web2\images\post1.jpg" />
     <Content Include="web2\images\post2.jpg" />
     <Content Include="web2\images\post3.jpg" />
+    <Content Include="web2\images\post4.jpg" />
+    <Content Include="web2\images\post5.jpeg" />
     <Content Include="web2\images\search.png" />
     <Content Include="web2\index.html" />
     <Content Include="web2\js\easing.js" />
