@@ -16,5 +16,8 @@ namespace Travel.Controllers
             var bloglar = c.Blogs.ToList();
             return View(bloglar);
         }
+        public ActionResult BlogDetay(int id) {
+            return View();
+        }
     }
 }
