@@ -15,8 +15,9 @@ namespace Travel.Models.Sınıflar {
 
         public string Yorum { get; set; }
 
+        public int Blogid { get; set; }
         // blog tablosundan deger uretiyoruz
-        public Blog Blog { get; set; }
+        public virtual Blog Blog { get; set; }
 
     }
 }

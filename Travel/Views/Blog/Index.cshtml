@@ -1,8 +1,4 @@
-﻿
-@using Travel.Models.Sınıflar;
-
-@model List<Blog>
-
+﻿@model Travel.Models.Sınıflar.BlogYorum
 
 @{
     ViewBag.Title = "Index";
@@ -42,31 +38,29 @@
     <div class="single">
         <div class="container">
             <div class="col-md-8 single-main">
-            @foreach( var x in Model) 
-                {
-                <div class="single-grid">
-                    <img src="~/web2/images/post1.jpg" alt="" style="margin-bottom: 10px" />
+                @foreach (var x in Model.Deger1) {
+                    <div class="single-grid">
+                        <img src="~/web2/images/post1.jpg" alt="" style="margin-bottom: 10px" />
 
-                    <a href="/Blog/BlogDetay/@x.ID"> @x.Baslik</a>
-                    <p>
-                        @x.Aciklama
-                    </p>
-                </div>
-                <br />
-            }
+                        <a href="/Blog/BlogDetay/@x.ID"> @x.Baslik</a>
+                        <p>
+                            @x.Aciklama
+                        </p>
+                    </div>
+                    <br />
+                }
             </div>
 
             <div class="col-md-4 side-content">
                 <div class="recent">
                     <h3>Son Gönderiler</h3>
-                    <ul>
-                        <li><a href="#">Aliquam tincidunt mauris</a></li>
-                        <li><a href="#">Vestibulum auctor dapibus  lipsum</a></li>
-                        <li><a href="#">Nunc dignissim risus consecu</a></li>
-                        <li><a href="#">Cras ornare tristiqu</a></li>
-                    </ul>
+                    @foreach (var y in Model.Deger3) {
+                        <ul>
+                            <li><a href="/Blog/BlogDetay/@y.ID">@y.Baslik</a></li>
+                        </ul>
+                    }
                 </div>
-                
+
                 <div class="comments">
                     <h3>Son Yorumlar</h3>
                     <ul>

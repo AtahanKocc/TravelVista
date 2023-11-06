@@ -9,12 +9,13 @@ namespace Travel.Controllers
 {
     public class AboutController : Controller
     {
-        // GET: About
+        // Veritabanı bağlantısı için bir Context nesnesi oluşturuyoruz.
         Context c = new Context();
         public ActionResult Index()
         {
+            // Hakkımızda verilerini veritabanından almak için Context sınıfını kullanıyoruz.
             var degerler = c.Hakkımızdas.ToList();
-            return View(degerler);
+            return View(degerler);    // Hakkımızda verilerini içeren bir görünümü döndürüyoruz.
         }
     }
 }
